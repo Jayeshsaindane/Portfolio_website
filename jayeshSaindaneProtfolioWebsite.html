@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayesh Saindane Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 2rem 0;
+        }
+
+        #about {
+            background: #f4f4f4;
+            padding: 2rem 0;
+        }
+
+        ul {
+            list-style: disc inside;
+            padding-left: 1rem;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 1rem;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Jayesh Jitendra Saindane</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a final-year Bachelor of Engineering (B.E.) student specializing in Information Technology at Savitribai Phule Pune University. Passionate about leveraging technology to solve real-world problems, I have experience in machine learning, web development, and creating user-friendly applications.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <h3>Python Developer Intern</h3>
+            <p><strong>Mass IT Solutions, Pune</strong> (Jan 2024 - Feb 2024)</p>
+            <ul>
+                <li>Developed a Plant Disease Detection web app using Streamlit, TensorFlow, and Keras.</li>
+                <li>Trained a model on 87,000 images to detect 38 plant diseases with high accuracy.</li>
+                <li>Designed an intuitive interface for real-time predictions.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Supermarket Billing System</h3>
+                <p>Streamlined the checkout process by designing a system that supports item scanning, dynamic pricing, discounts, and receipt generation.</p>
+            </div>
+
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>Developed this responsive portfolio using HTML, CSS, and JavaScript to showcase my projects and skills effectively.</p>
+            </div>
+
+            <div class="project">
+                <h3>Plant Disease Recognition System</h3>
+                <p>Implemented a TensorFlow-based system to detect plant diseases from images. Integrated a Flask API for fast and accurate predictions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, Java</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React</li>
+                <li><strong>Database Management:</strong> SQL, MongoDB</li>
+                <li><strong>Tools & Platforms:</strong> GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <h3>Bachelor of Engineering (B.E.)</h3>
+            <p><strong>Savitribai Phule Pune University</strong> (2025 expected)</p>
+            <p>CGPA: 6.75</p>
+
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <p><strong>Hasti Public School and Jr. College, Dondaicha</strong> (2021)</p>
+            <p>Percentage: 86%</p>
+
+            <h3>Secondary School Certificate (SSC)</h3>
+            <p><strong>Hasti Public School, Dondaicha</strong> (2019)</p>
+            <p>Percentage: 86%</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <p>Email: <a href="mailto:jayeshsaindane.nbnstic.it@gmail.com">jayeshsaindane.nbnstic.it@gmail.com</a></p>
+            <p>Phone: +91 9766429962</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jayesh Jitendra Saindane</p>
+            <p><a href="https://linkedin.com/in/jayesh-saindane-78261a320">LinkedIn</a> | <a href="https://leetcode.com/u/jayeshsaindane1132">LeetCode</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message. I will get back to you soon!");
+        });
+    </script>
+</body>
+</html>
